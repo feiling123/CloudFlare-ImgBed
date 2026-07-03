@@ -1,4 +1,8 @@
-import { dualAuthCheck } from '../utils/dualAuth.js';
+/**
+ * 远程资源代理读取 API
+ * 负责在鉴权后拉取请求体中指定 URL 的资源并透传响应内容
+ */
+import { dualAuthCheck } from '../utils/auth/dualAuth.js';
 
 export async function onRequest(context) {
     // 获取请求体中URL的内容
